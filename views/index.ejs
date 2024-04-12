@@ -1,0 +1,22 @@
+<%- include('partials/header.ejs') %>
+
+  <div class="container">
+    <div class="response-area row">
+      <div class="col-md-12">
+	  <%= content %>
+      </div>
+    </div>
+    <form id="myForm" method="post">
+      <label for="idInput">Id:</label>
+      <input type="text" id="idInput" name="objectID">
+
+      <label for="submit">Route:</label>
+      <input id="get-objects" type="submit" value="GET ALL" formaction="/get-objects">
+	  <input id="get-departmentIds" type="submit" value="DEPARTMENT IDs" formaction="/get-departmentIds">
+	  <input id="get-metadataDate" type="submit" value="METADATA DATE" formaction="/get-metadataDate">
+	  <input id="get-object" type="submit" value="OBJECT BY ID" formaction="/get-object">
+      
+    </form>
+  </div>
+
+<%- include('partials/footer.ejs') %>
